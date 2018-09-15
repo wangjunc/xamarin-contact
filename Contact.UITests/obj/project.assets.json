@@ -19,6 +19,26 @@
         "runtime": {
           "lib/net45/Xamarin.UITest.dll": {}
         }
+      },
+      "Contact.Android/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/Contact.Android.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Contact.Android.dll": {}
+        }
+      },
+      "Contact.iOS/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/Contact.iOS.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Contact.iOS.dll": {}
+        }
       }
     },
     ".NETFramework,Version=v4.6.1/win": {
@@ -38,6 +58,26 @@
         },
         "runtime": {
           "lib/net45/Xamarin.UITest.dll": {}
+        }
+      },
+      "Contact.Android/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/Contact.Android.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Contact.Android.dll": {}
+        }
+      },
+      "Contact.iOS/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/Contact.iOS.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Contact.iOS.dll": {}
         }
       }
     },
@@ -59,6 +99,26 @@
         "runtime": {
           "lib/net45/Xamarin.UITest.dll": {}
         }
+      },
+      "Contact.Android/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/Contact.Android.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Contact.Android.dll": {}
+        }
+      },
+      "Contact.iOS/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/Contact.iOS.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Contact.iOS.dll": {}
+        }
       }
     },
     ".NETFramework,Version=v4.6.1/win-x86": {
@@ -78,6 +138,26 @@
         },
         "runtime": {
           "lib/net45/Xamarin.UITest.dll": {}
+        }
+      },
+      "Contact.Android/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/Contact.Android.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Contact.Android.dll": {}
+        }
+      },
+      "Contact.iOS/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/Contact.iOS.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Contact.iOS.dll": {}
         }
       }
     }
@@ -111,38 +191,60 @@
         "xamarin.uitest.2.2.4.nupkg.sha512",
         "xamarin.uitest.nuspec"
       ]
+    },
+    "Contact.Android/1.0.0": {
+      "type": "project",
+      "path": "../Contact.Android/Contact.Android.csproj",
+      "msbuildProject": "../Contact.Android/Contact.Android.csproj"
+    },
+    "Contact.iOS/1.0.0": {
+      "type": "project",
+      "path": "../Contact.iOS/Contact.iOS.csproj",
+      "msbuildProject": "../Contact.iOS/Contact.iOS.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.6.1": [
+      "Contact.Android >= 1.0.0",
+      "Contact.iOS >= 1.0.0",
       "NUnit >= 2.6.4",
       "Xamarin.UITest >= 2.2.4"
     ]
   },
   "packageFolders": {
-    "/Users/vatel/.nuget/packages/": {}
+    "C:\\Users\\Vatel\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/vatel/Projects/xamarin-contact/Contact.UITests/Contact.UITests.csproj",
+      "projectUniqueName": "D:\\Workspace\\xamarin-contact\\Contact.UITests\\Contact.UITests.csproj",
       "projectName": "Contact.UITests",
-      "projectPath": "/Users/vatel/Projects/xamarin-contact/Contact.UITests/Contact.UITests.csproj",
-      "packagesPath": "/Users/vatel/.nuget/packages/",
-      "outputPath": "/Users/vatel/Projects/xamarin-contact/Contact.UITests/obj",
+      "projectPath": "D:\\Workspace\\xamarin-contact\\Contact.UITests\\Contact.UITests.csproj",
+      "packagesPath": "C:\\Users\\Vatel\\.nuget\\packages\\",
+      "outputPath": "D:\\Workspace\\xamarin-contact\\Contact.UITests\\obj\\",
       "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/vatel/.config/NuGet/NuGet.Config"
+        "C:\\Users\\Vatel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net461"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net461": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Workspace\\xamarin-contact\\Contact.Android\\Contact.Android.csproj": {
+              "projectPath": "D:\\Workspace\\xamarin-contact\\Contact.Android\\Contact.Android.csproj"
+            },
+            "D:\\Workspace\\xamarin-contact\\Contact.iOS\\Contact.iOS.csproj": {
+              "projectPath": "D:\\Workspace\\xamarin-contact\\Contact.iOS\\Contact.iOS.csproj"
+            }
+          }
         }
       }
     },
@@ -151,11 +253,11 @@
         "dependencies": {
           "NUnit": {
             "target": "Package",
-            "version": "2.6.4"
+            "version": "[2.6.4, )"
           },
           "Xamarin.UITest": {
             "target": "Package",
-            "version": "2.2.4"
+            "version": "[2.2.4, )"
           }
         }
       }
@@ -171,5 +273,79 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project Contact.iOS is not compatible with net461 (.NETFramework,Version=v4.6.1). Project Contact.iOS supports: xamarinios10 (Xamarin.iOS,Version=v1.0)",
+      "libraryId": "Contact.iOS",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6.1"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project Contact.Android is not compatible with net461 (.NETFramework,Version=v4.6.1). Project Contact.Android supports: monoandroid81 (MonoAndroid,Version=v8.1)",
+      "libraryId": "Contact.Android",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6.1"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project Contact.iOS is not compatible with net461 (.NETFramework,Version=v4.6.1) / win. Project Contact.iOS supports: xamarinios10 (Xamarin.iOS,Version=v1.0)",
+      "libraryId": "Contact.iOS",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6.1/win"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project Contact.Android is not compatible with net461 (.NETFramework,Version=v4.6.1) / win. Project Contact.Android supports: monoandroid81 (MonoAndroid,Version=v8.1)",
+      "libraryId": "Contact.Android",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6.1/win"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project Contact.iOS is not compatible with net461 (.NETFramework,Version=v4.6.1) / win-x64. Project Contact.iOS supports: xamarinios10 (Xamarin.iOS,Version=v1.0)",
+      "libraryId": "Contact.iOS",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6.1/win-x64"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project Contact.Android is not compatible with net461 (.NETFramework,Version=v4.6.1) / win-x64. Project Contact.Android supports: monoandroid81 (MonoAndroid,Version=v8.1)",
+      "libraryId": "Contact.Android",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6.1/win-x64"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project Contact.iOS is not compatible with net461 (.NETFramework,Version=v4.6.1) / win-x86. Project Contact.iOS supports: xamarinios10 (Xamarin.iOS,Version=v1.0)",
+      "libraryId": "Contact.iOS",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6.1/win-x86"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project Contact.Android is not compatible with net461 (.NETFramework,Version=v4.6.1) / win-x86. Project Contact.Android supports: monoandroid81 (MonoAndroid,Version=v8.1)",
+      "libraryId": "Contact.Android",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6.1/win-x86"
+      ]
+    }
+  ]
 }

@@ -766,31 +766,34 @@
     ]
   },
   "packageFolders": {
-    "/Users/vatel/.nuget/packages/": {}
+    "C:\\Users\\Vatel\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/vatel/Projects/xamarin-contact/Contact.iOS/Contact.iOS.csproj",
+      "projectUniqueName": "D:\\Workspace\\xamarin-contact\\Contact.iOS\\Contact.iOS.csproj",
       "projectName": "Contact.iOS",
-      "projectPath": "/Users/vatel/Projects/xamarin-contact/Contact.iOS/Contact.iOS.csproj",
-      "packagesPath": "/Users/vatel/.nuget/packages/",
-      "outputPath": "/Users/vatel/Projects/xamarin-contact/Contact.iOS/obj",
+      "projectPath": "D:\\Workspace\\xamarin-contact\\Contact.iOS\\Contact.iOS.csproj",
+      "packagesPath": "C:\\Users\\Vatel\\.nuget\\packages\\",
+      "outputPath": "D:\\Workspace\\xamarin-contact\\Contact.iOS\\obj\\",
       "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/vatel/.config/NuGet/NuGet.Config"
+        "C:\\Users\\Vatel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/vatel/Projects/xamarin-contact/Contact/Contact.csproj": {
-              "projectPath": "/Users/vatel/Projects/xamarin-contact/Contact/Contact.csproj"
+            "D:\\Workspace\\xamarin-contact\\Contact\\Contact.csproj": {
+              "projectPath": "D:\\Workspace\\xamarin-contact\\Contact\\Contact.csproj"
             }
           }
         }
@@ -801,11 +804,11 @@
         "dependencies": {
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "3.1.0.697729"
+            "version": "[3.1.0.697729, )"
           },
           "Xamarin.TestCloud.Agent": {
             "target": "Package",
-            "version": "0.21.4"
+            "version": "[0.21.4, )"
           }
         }
       }
