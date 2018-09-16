@@ -7,17 +7,17 @@
                      VerticalOptions="StartAndExpand">
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <Label Text="Name" />
-                <Entry Text="{Binding Name}}" HorizontalOptions="FillAndExpand" />
+                <Entry Text="{Binding Name}" HorizontalOptions="FillAndExpand" />
             </StackLayout>
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <Label Text="Number" />
-                <Entry Text="{Binding Number}}" HorizontalOptions="FillAndExpand" />
+                <Entry Text="{Binding Number}" HorizontalOptions="FillAndExpand" />
             </StackLayout>
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <Label Text="Note" />
-                <Entry Text="{Binding Note}}" HorizontalOptions="FillAndExpand" />
+                <Entry Text="{Binding Note}" HorizontalOptions="FillAndExpand" />
             </StackLayout>
 
             <Button Text="Save" Clicked="OnSave" />

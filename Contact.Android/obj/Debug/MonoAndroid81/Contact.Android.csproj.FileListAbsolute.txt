@@ -99,6 +99,8 @@ D:\Workspace\xamarin-contact\Contact.Android\obj\Debug\MonoAndroid81\android\ass
 D:\Workspace\xamarin-contact\Contact.Android\obj\Debug\MonoAndroid81\android\assets\System.Xml.pdb
 D:\Workspace\xamarin-contact\Contact.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Core.pdb
 D:\Workspace\xamarin-contact\Contact.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Xaml.pdb
+D:\Workspace\xamarin-contact\Contact.Android\obj\Debug\MonoAndroid81\res\drawable\cover.png
+D:\Workspace\xamarin-contact\Contact.Android\obj\Debug\MonoAndroid81\res\drawable\defaultavatar.png
 D:\Workspace\xamarin-contact\Contact\bin\Debug\netstandard2.0\Contact.dll
 D:\Workspace\xamarin-contact\Contact.Android\obj\Debug\MonoAndroid81\linksrc\Contact.Android.pdb
 D:\Workspace\xamarin-contact\Contact.Android\obj\Debug\MonoAndroid81\linksrc\Mono.Android.pdb

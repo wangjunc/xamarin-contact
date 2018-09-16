@@ -9,6 +9,7 @@ namespace Contact.Schema
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
+        public string Avatar { get; set; }
         public string Name { get; set; }
         public string Phone { get; set; }
         public string Note { get; set; }

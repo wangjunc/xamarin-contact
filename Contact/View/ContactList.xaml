@@ -13,16 +13,15 @@
                     <StackLayout Margin="20, 0, 0, 0"
                                  VerticalOptions="Center"
                                  Orientation="Horizontal">
-
-                    <Image Source="{Binding Img}"></Image>
-                    <Label Text="{Binding Name}"
+                        <Image Source="defaultavatar"></Image>
+                        <Label Text="{Binding Name}"
                            VerticalTextAlignment="Center"
                            Style="{DynamicResource ListItemDetailTextStyle}"/>
-                    </StackLayout>
+
                 </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
-    </ListView>
+    </ListView> 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="+"
                      Clicked="OnItemAdded">
