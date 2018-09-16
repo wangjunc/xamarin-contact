@@ -99,6 +99,7 @@ D:\Workspace\xamarin-contact\Contact.Android\obj\Debug\MonoAndroid81\android\ass
 D:\Workspace\xamarin-contact\Contact.Android\obj\Debug\MonoAndroid81\android\assets\System.Xml.pdb
 D:\Workspace\xamarin-contact\Contact.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Core.pdb
 D:\Workspace\xamarin-contact\Contact.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Xaml.pdb
+D:\Workspace\xamarin-contact\Contact\bin\Debug\netstandard2.0\Contact.dll
 D:\Workspace\xamarin-contact\Contact.Android\obj\Debug\MonoAndroid81\linksrc\Contact.Android.pdb
 D:\Workspace\xamarin-contact\Contact.Android\obj\Debug\MonoAndroid81\linksrc\Mono.Android.pdb
 D:\Workspace\xamarin-contact\Contact.Android\obj\Debug\MonoAndroid81\linksrc\mscorlib.pdb
@@ -117,6 +118,7 @@ D:\Workspace\xamarin-contact\Contact.Android\obj\Debug\MonoAndroid81\linksrc\Sys
 D:\Workspace\xamarin-contact\Contact.Android\obj\Debug\MonoAndroid81\linksrc\System.ServiceModel.Internals.pdb
 D:\Workspace\xamarin-contact\Contact.Android\obj\Debug\MonoAndroid81\linksrc\System.Web.Services.pdb
 D:\Workspace\xamarin-contact\Contact.Android\obj\Debug\MonoAndroid81\linksrc\Mono.Security.pdb
+D:\Workspace\xamarin-contact\Contact.Android\bin\Debug\Contact.dll.mdb
 D:\Workspace\xamarin-contact\Contact.Android\obj\Debug\MonoAndroid81\linksrc\Contact.dll.mdb
 D:\Workspace\xamarin-contact\Contact.Android\obj\Debug\MonoAndroid81\linksrc\FormsViewGroup.dll.mdb
 D:\Workspace\xamarin-contact\Contact.Android\obj\Debug\MonoAndroid81\linksrc\Xamarin.Forms.Platform.Android.dll.mdb
