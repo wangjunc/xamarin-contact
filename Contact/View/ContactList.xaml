@@ -13,11 +13,12 @@
                     <StackLayout Margin="20, 0, 0, 0"
                                  VerticalOptions="Center"
                                  Orientation="Horizontal">
-                        <Image Source="defaultavatar"></Image>
+                        <!--<Image Source="{Binding Avatar}"></Image>-->
+                        <Image Source="defaultavatar" />
                         <Label Text="{Binding Name}"
                            VerticalTextAlignment="Center"
                            Style="{DynamicResource ListItemDetailTextStyle}"/>
-
+                    </StackLayout>
                 </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
