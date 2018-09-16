@@ -1,0 +1,9 @@
+D:\Workspace\xamarin-contact\Contact.UITests\bin\Debug\Contact.UITests.dll
+D:\Workspace\xamarin-contact\Contact.UITests\bin\Debug\Contact.UITests.pdb
+D:\Workspace\xamarin-contact\Contact.UITests\bin\Debug\nunit.framework.dll
+D:\Workspace\xamarin-contact\Contact.UITests\bin\Debug\Xamarin.UITest.dll
+D:\Workspace\xamarin-contact\Contact.UITests\obj\Debug\Contact.UITests.csprojAssemblyReference.cache
+D:\Workspace\xamarin-contact\Contact.UITests\obj\Debug\Contact.UITests.csproj.CoreCompileInputs.cache
+D:\Workspace\xamarin-contact\Contact.UITests\obj\Debug\Contact.UITests.csproj.CopyComplete
+D:\Workspace\xamarin-contact\Contact.UITests\obj\Debug\Contact.UITests.dll
+D:\Workspace\xamarin-contact\Contact.UITests\obj\Debug\Contact.UITests.pdb
