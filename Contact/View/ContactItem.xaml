@@ -12,7 +12,7 @@
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <Label Text="Number" />
-                <Entry Text="{Binding Number}" HorizontalOptions="FillAndExpand" />
+                <Entry Text="{Binding Phone}" HorizontalOptions="FillAndExpand" />
             </StackLayout>
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">

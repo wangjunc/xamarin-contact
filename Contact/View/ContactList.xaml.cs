@@ -17,12 +17,7 @@ namespace Contact.View
         {
             InitializeComponent();
 
-            var contactItem = new Schema.ContactItem { ID = 1, Name = "asdf", Phone = "a", Note = "A" };
-
             listView.ItemsSource = new List<Schema.ContactItem>();
-
-            var a = (List<Schema.ContactItem>)(listView.ItemsSource);
-            a.Add(contactItem);
         }
 
         protected override async void OnAppearing()
