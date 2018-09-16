@@ -32,12 +32,14 @@ namespace Contact.View
             listView.ItemsSource = await App.DB.GetAll();
         }
 
+#pragma warning disable CS1998 // Async method lacks 'await' operators and will run synchronously
         async void OnItemTapped(object sender, ItemTappedEventArgs e)
+#pragma warning restore CS1998 // Async method lacks 'await' operators and will run synchronously
         {
             if (e.Item == null)
                 return;
 
-            await DisplayAlert("Item Tapped", "An item was tapped.", "OK");
+            //await DisplayAlert("Item Tapped", "An item was tapped.", "OK");
 
             //Deselect Item
             //((ListView)sender).SelectedItem = null;
