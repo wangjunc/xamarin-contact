@@ -21,6 +21,7 @@
             </StackLayout>
 
             <Button Text="Save" Clicked="OnSave" />
+            <Button Text="Delete" Clicked="OnDelete"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

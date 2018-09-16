@@ -22,5 +22,11 @@ namespace Contact.View
             await App.DB.Save(BindingContext as Schema.ContactItem);
             await Navigation.PopAsync();
         }
+
+        async void OnDelete(object sender, EventArgs e)
+        {
+            await App.DB.Delete(BindingContext as Schema.ContactItem);
+            await Navigation.PopAsync();
+        }
 	}
 }
