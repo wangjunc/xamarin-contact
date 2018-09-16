@@ -15,6 +15,21 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="View\ContactList.xaml.cs">
+      <DependentUpon>ContactList.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\ContactItem.xaml.cs">
+      <DependentUpon>ContactItem.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="View\ContactItem.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="App.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
