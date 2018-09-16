@@ -25,7 +25,14 @@ namespace Contact.View
             a.Add(contactItem);
         }
 
-        async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+
+            listView.ItemsSource = await App.DB.GetAll();
+        }
+
+        async void OnItemTapped(object sender, ItemTappedEventArgs e)
         {
             if (e.Item == null)
                 return;
@@ -36,13 +43,21 @@ namespace Contact.View
             //((ListView)sender).SelectedItem = null;
         }
 
+        async void OnItemAdded(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ContactItem
+            {
+                BindingContext = new Schema.ContactItem()
+            });
+        }
+
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             if (e.SelectedItem != null)
             {
                 await Navigation.PushAsync(new ContactItem
                 {
-                    BindingContext = e.SelectedItem as ContactItem
+                    BindingContext = e.SelectedItem as Schema.ContactItem
                 });
             }
         }

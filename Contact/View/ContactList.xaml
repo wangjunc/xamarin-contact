@@ -11,17 +11,22 @@
             <DataTemplate>
                 <ViewCell>
                     <StackLayout Margin="20, 0, 0, 0"
-                                Orientation="Horizontal">
+                                 VerticalOptions="Center"
+                                 Orientation="Horizontal">
 
                     <Image Source="{Binding Img}"></Image>
-                    <Label Text="{Binding Name}" 
-                            Style="{DynamicResource ListItemDetailTextStyle}"/>
+                    <Label Text="{Binding Name}"
+                           VerticalTextAlignment="Center"
+                           Style="{DynamicResource ListItemDetailTextStyle}"/>
                     </StackLayout>
                 </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
     <ContentPage.ToolbarItems>
-        
+        <ToolbarItem Text="+"
+                     Clicked="OnItemAdded">
+            
+        </ToolbarItem>
     </ContentPage.ToolbarItems>
 </ContentPage>

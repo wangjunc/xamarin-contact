@@ -16,5 +16,11 @@ namespace Contact.View
 		{
 			InitializeComponent ();
 		}
+
+        async void OnSave(object sender, EventArgs e)
+        {
+            await App.DB.Save(BindingContext as Schema.ContactItem);
+            await Navigation.PopAsync();
+        }
 	}
 }

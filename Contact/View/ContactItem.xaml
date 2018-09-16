@@ -3,8 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Contact.View.ContactItem">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Hello Xamarin.Forms!" />
+        <StackLayout Margin="20" VerticalOptions="StartAndExpand">
+            <Label Text="Name" />
+            <Entry Text="{Binding Name}}" />
+            <Label Text="Number" />
+            <Entry Text="{Binding Number}}" />
+            <Label Text="Note" />
+            <Entry Text="{Binding Note}" />
+            <Button Text="Save" Clicked="OnSave" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
