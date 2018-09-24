@@ -8,24 +8,42 @@ namespace Contact
 {
     public class App : Application
     {
-        static ContactDatabase db; 
+        static ContactDatabase contactDB;
+
+        static UserDatabase userDB;
 
         public App()
         {
-            var nav = new NavigationPage(new View.ContactList());
+            var auth = new View.Authentication();
+            var nav = new NavigationPage();
+            NavigationPage.SetHasNavigationBar(auth, false);
+            nav.PushAsync(auth);
             MainPage = nav;
         }
 
-        public static ContactDatabase DB
+        public static ContactDatabase ContactDB
         {
             get
             {
-                if (db == null)
+                if (contactDB == null)
                 {
-                    db = new ContactDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "ContactSQLite.db3"));
+                    contactDB = new ContactDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "ContactSQLite.db3"));
                 }
 
-                return db;
+                return contactDB;
+            }
+        }
+
+        public static UserDatabase UserDB
+        {
+            get
+            {
+                if (userDB == null)
+                {
+                    userDB = new UserDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "UserSQLite.db3"));
+                }
+
+                return userDB;
             }
         }
 

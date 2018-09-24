@@ -24,7 +24,7 @@ namespace Contact.View
         {
             base.OnAppearing();
 
-            listView.ItemsSource = await App.DB.GetAll();
+            listView.ItemsSource = await App.ContactDB.GetAll();
         }
 
 #pragma warning disable CS1998 // Async method lacks 'await' operators and will run synchronously
@@ -52,10 +52,12 @@ namespace Contact.View
         {
             if (e.SelectedItem != null)
             {
-                await Navigation.PushAsync(new ContactItem
+                var contactItem = new ContactItem
                 {
                     BindingContext = e.SelectedItem as Schema.ContactItem
-                });
+                };
+                NavigationPage.SetHasNavigationBar(contactItem, false);
+                await Navigation.PushAsync(contactItem);
             }
         }
     }

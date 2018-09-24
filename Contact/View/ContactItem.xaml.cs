@@ -19,13 +19,13 @@ namespace Contact.View
 
         async void OnSave(object sender, EventArgs e)
         {
-            await App.DB.Save(BindingContext as Schema.ContactItem);
+            await App.ContactDB.Save(BindingContext as Schema.ContactItem);
             await Navigation.PopAsync();
         }
 
         async void OnDelete(object sender, EventArgs e)
         {
-            await App.DB.Delete(BindingContext as Schema.ContactItem);
+            await App.ContactDB.Delete(BindingContext as Schema.ContactItem);
             await Navigation.PopAsync();
         }
 	}
