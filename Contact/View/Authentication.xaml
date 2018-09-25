@@ -5,6 +5,11 @@
     <ContentPage.Content>
         <StackLayout Margin="20"
                      VerticalOptions="StartAndExpand">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Label Text="Temperature in Shanghai: "></Label>
+                <Label x:Name="weather" Text=""></Label>
+            </StackLayout>
+            
             <StackLayout HorizontalOptions="FillAndExpand"
                          VerticalOptions="Center">
                 <Label Text="Password" />

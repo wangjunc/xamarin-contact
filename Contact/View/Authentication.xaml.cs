@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Security.Cryptography;
+using System.Net.Http;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+
+using Newtonsoft.Json;
 
 namespace Contact.View
 {
@@ -18,11 +21,13 @@ namespace Contact.View
             InitializeComponent();
         }
 
-        protected override void OnAppearing()
+        protected override async void OnAppearing()
         {
             base.OnAppearing();
 
             InitUser();
+
+            weather.Text = await GetWeather();
         }
 
         async void OnSubmit(object sender, EventArgs e)
@@ -56,6 +61,22 @@ namespace Contact.View
                 user.HashedPassword = GetHashedPassword("admin");
                 await App.UserDB.Save(user);
             }
+        }
+
+        private async Task<string> GetWeather()
+        {
+            var client = new HttpClient();
+            var uri = new Uri("https://free-api.heweather.com/s6/weather/now?location=shanghai&key=a1364d81c26e485bbdc24ac459191841");
+            var response = await client.GetAsync(uri);
+            string content = "";
+            
+            if (response.IsSuccessStatusCode)
+            {
+                content = await response.Content.ReadAsStringAsync();
+                var w = JsonConvert.DeserializeObject<Schema.Weather>(content);
+                content = w.HeWeather6[0].now.tmp;
+            }
+            return content;
         }
 
         private string GetHashedPassword(string password)
