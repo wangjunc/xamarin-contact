@@ -18,18 +18,11 @@ namespace Contact.View
             InitializeComponent();
         }
 
-        protected override async void OnAppearing()
+        protected override void OnAppearing()
         {
             base.OnAppearing();
 
-            var user = await App.UserDB.Get(1);
-            if (user == null)
-            {
-                user = new Schema.UserItem {};
-                user.ID = 1;
-                user.HashedPassword = GetHashedPassword("admin");
-                await App.UserDB.Save(user);
-            }
+            InitUser();
         }
 
         async void OnSubmit(object sender, EventArgs e)
@@ -43,7 +36,7 @@ namespace Contact.View
             if (user.HashedPassword == hashedPassword)
             {
                 var contactList = new ContactList();
-                NavigationPage.SetHasNavigationBar(contactList, false);
+                //NavigationPage.SetHasNavigationBar(contactList, false);
                 await Navigation.PopAsync();
                 await Navigation.PushAsync(contactList);
             }
@@ -51,6 +44,17 @@ namespace Contact.View
             {
                 await DisplayAlert("wrong password", "please retry", "ok");
                 password.Text = "";
+            }
+        }
+
+        private async void InitUser()
+        {
+            var user = await App.UserDB.Get(1);
+            if (user == null)
+            {
+                user = new Schema.UserItem { };
+                user.HashedPassword = GetHashedPassword("admin");
+                await App.UserDB.Save(user);
             }
         }
 

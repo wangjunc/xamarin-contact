@@ -56,7 +56,7 @@ namespace Contact.View
                 {
                     BindingContext = e.SelectedItem as Schema.ContactItem
                 };
-                NavigationPage.SetHasNavigationBar(contactItem, false);
+                //NavigationPage.SetHasNavigationBar(contactItem, false);
                 await Navigation.PushAsync(contactItem);
             }
         }

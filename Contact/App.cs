@@ -16,7 +16,7 @@ namespace Contact
         {
             var auth = new View.Authentication();
             var nav = new NavigationPage();
-            NavigationPage.SetHasNavigationBar(auth, false);
+            //NavigationPage.SetHasNavigationBar(auth, false);
             nav.PushAsync(auth);
             MainPage = nav;
         }
