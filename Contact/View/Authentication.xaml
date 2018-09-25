@@ -8,6 +8,7 @@
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <Label Text="Temperature in Shanghai: "></Label>
                 <Label x:Name="weather" Text=""></Label>
+                <Label Text="℃"></Label>
             </StackLayout>
             
             <StackLayout HorizontalOptions="FillAndExpand"
